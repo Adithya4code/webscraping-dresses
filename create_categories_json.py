@@ -24,13 +24,13 @@ def build_nested_dict(urls):
     return nested_dict
 
 if __name__ == "__main__":
-    with open("zara_urls(unfiltered).txt", "r") as file:
+    with open("zara_urls.txt", "r") as file:
         content = file.read()
         urls = [url.strip() for url in content.split(",") if url.strip()]
 
     result = build_nested_dict(urls)
 
-    with open("zara_categories(unfiltered).json", "w") as f:
+    with open("zara_categories.json", "w") as f:
         json.dump(result, f, indent=4)
 
-    print("Saved as zara_categories(unfiltered).json")
+    print("Saved as zara_categories.json")

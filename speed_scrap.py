@@ -141,7 +141,7 @@ async def scrape_all(data):
 
         for gender, cat_map in data.items():
             for category, links in cat_map.items():
-                folder_path = os.path.join("downloaded_images", gender, category)
+                folder_path = os.path.join("zara_images", gender, category)
                 os.makedirs(folder_path, exist_ok=True)
 
                 for url in links:

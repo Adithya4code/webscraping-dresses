@@ -34,7 +34,7 @@ async def scrape_links_from_category(sem, url, gender, category, browser):
         finally:
             await page.close()
 
-async def main(categories_file="zara_categories.json", output_file="zara_product_links(unfiltered"").json"):
+async def main(categories_file="zara_categories.json", output_file="zara_product_links.json"):
     with open(categories_file, "r") as f:
         categories = json.load(f)
 
