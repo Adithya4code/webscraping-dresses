@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+downloaded_images/
+downloaded_images-Renamed/
+*.txt  # Optionally exclude intermediate files like zara_urls(unfiltered).txt
+*.json  # Optionally exclude output JSON files
+venv/
+zara_categories(unfiltered).json
+zara_categories.json
+zara_product_links(unfiltered).json
+zara_product_links.json
+zara_urls(unfiltered).txt
+zara_urls.txt
